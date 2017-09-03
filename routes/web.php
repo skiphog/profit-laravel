@@ -1,5 +1,14 @@
 <?php
 
 Route::get('/', function () {
-    return view('welcome');
+
+    dd(
+        config('profit.x_user_name'),
+        hash(
+            'gost',
+            config('profit.x_password')
+        )
+    );
+
+
 });
