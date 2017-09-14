@@ -5,3 +5,7 @@
 **ДЗ №2**
 * [Добавить Middleware](https://github.com/skiphog/profit-laravel/blob/master/app/Http/Middleware/VerifyAuthentication.php)
 
+**ДЗ №3**
+* [Вывести текущую дату](#)
+* [Вывести новости](#) с [переданным массивом](#)
+* [Форма поиска](#)

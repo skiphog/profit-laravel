@@ -5,3 +5,5 @@ Route::get('/', function () {
 });
 
 Route::get('/test-verify', 'TestVerifyController@testVerify')->middleware('verify');
+
+Route::get('/test-news', 'TestNews@index');
