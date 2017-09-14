@@ -6,6 +6,6 @@
 * [Добавить Middleware](https://github.com/skiphog/profit-laravel/blob/master/app/Http/Middleware/VerifyAuthentication.php)
 
 **ДЗ №3**
-* [Вывести текущую дату](#)
-* [Вывести новости](#) с [переданным массивом](#)
-* [Форма поиска](#)
+* [Вывести текущую дату](https://github.com/skiphog/profit-laravel/blob/master/resources/views/layouts/app.blade.php#L22)
+* [Вывести новости](https://github.com/skiphog/profit-laravel/blob/master/resources/views/testNews.blade.php) с [переданным массивом](https://github.com/skiphog/profit-laravel/blob/master/app/Http/Controllers/TestNews.php)
+* [Форма поиска](https://github.com/skiphog/profit-laravel/blob/master/resources/views/layouts/app.blade.php#L14) (Подключение библиотеки в этом же файле)
