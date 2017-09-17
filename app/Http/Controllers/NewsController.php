@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\News;
+use App\Article;
 
 class NewsController extends Controller
 {
 
     public function index()
     {
-        $news = News::with('author')->latest()->take(5)->get();
+        $news = Article::with('author')->latest()->take(5)->get();
 
         return view('news', compact('news'));
     }

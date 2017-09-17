@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property int $id
  * @property string $name
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\News[] $news
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Article[] $news
  * @mixin \Eloquent
  */
 class Author extends Model
@@ -20,6 +20,6 @@ class Author extends Model
 
     public function news()
     {
-        return $this->hasMany(News::class);
+        return $this->hasMany(Article::class);
     }
 }

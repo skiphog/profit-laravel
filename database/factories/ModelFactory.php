@@ -19,7 +19,7 @@ $factory->define(App\Author::class, function (Faker $faker) {
     ];
 });
 
-$factory->define(App\News::class, function (Faker $faker) {
+$factory->define(App\Article::class, function (Faker $faker) {
     static $date = '2017-09-17 13:00:00';
 
     return [

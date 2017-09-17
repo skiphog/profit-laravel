@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * App\News
+ * App\Article
  *
  * @property int $id
  * @property string $title
@@ -16,8 +16,10 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \App\Author|null $author
  * @mixin \Eloquent
  */
-class News extends Model
+class Article extends Model
 {
+    protected $table = 'news';
+
     protected $fillable = ['title', 'content', 'author_id'];
 
     public function author()

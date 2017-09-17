@@ -1,7 +1,7 @@
 <?php
 
 use App\User;
-use App\News;
+use App\Article;
 use App\Author;
 use Illuminate\Database\Seeder;
 
@@ -17,11 +17,11 @@ class DatabaseSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
 
         User::truncate();
-        News::truncate();
+        Article::truncate();
         Author::truncate();
 
         factory(User::class, 1)->create();
         factory(Author::class, 10)->create();
-        factory(News::class, 50)->create();
+        factory(Article::class, 50)->create();
     }
 }

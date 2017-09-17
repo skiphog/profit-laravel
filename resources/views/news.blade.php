@@ -1,4 +1,4 @@
-<?php /** @var \App\News[]|\Illuminate\Database\Eloquent\Collection $news */ ?>
+<?php /** @var \App\Article[]|\Illuminate\Database\Eloquent\Collection $news */ ?>
 @extends('layouts/app')
 
 @section('title','Новости')
