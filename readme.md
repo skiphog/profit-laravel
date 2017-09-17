@@ -9,3 +9,5 @@
 * [Вывести текущую дату](https://github.com/skiphog/profit-laravel/blob/master/resources/views/layouts/app.blade.php#L22)
 * [Вывести новости](https://github.com/skiphog/profit-laravel/blob/master/resources/views/testNews.blade.php) с [переданным массивом](https://github.com/skiphog/profit-laravel/blob/master/app/Http/Controllers/TestNews.php)
 * [Форма поиска](https://github.com/skiphog/profit-laravel/blob/master/resources/views/layouts/app.blade.php#L14) (Подключение библиотеки в этом же файле)
+
+**ДЗ №4**

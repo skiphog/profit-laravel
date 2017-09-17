@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>@yield('title')</title>
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/bulma.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/shoelace.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/select2.min.css') }}" rel="stylesheet">
     @stack('styles')
 </head>
