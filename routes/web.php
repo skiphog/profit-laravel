@@ -11,3 +11,5 @@ Route::get('/test-verify', 'TestVerifyController@testVerify')->middleware('verif
 Route::get('/test-news', 'TestNews@index');
 
 Route::get('/rubrics-news', 'NewsController@news');
+
+Route::post('/rubrics-test', 'NewsController@setArchiveByDate');

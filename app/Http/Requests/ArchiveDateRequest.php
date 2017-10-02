@@ -24,7 +24,8 @@ class ArchiveDateRequest extends FormRequest
     public function rules()
     {
         return [
-            'date' => 'required|date'
+            'date'       => 'required|date',
+            'rubrics_id' => 'required|array'
         ];
     }
 }

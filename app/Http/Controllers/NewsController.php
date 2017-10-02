@@ -36,7 +36,8 @@ class NewsController extends Controller
     public function setArchiveByDate(ArchiveDateRequest $request)
     {
         Article::where('created_at', '<', $request->input('date'))
-            ->update('active', false);
+            ->whereIn('rubric_id', $request->input('rubrics_id'))
+            ->update(['active' => false]);
 
         return back()->with('flash', 'Сохранено');
     }
