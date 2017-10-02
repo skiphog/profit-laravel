@@ -17,6 +17,10 @@ class CreateNewsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('content');
+            $table->boolean('active')->default(true);
+
+            $table->unsignedInteger('rubric_id');
+            $table->foreign('rubric_id')->references('id')->on('rubrics');
 
             $table->unsignedInteger('author_id')->nullable();
             $table->foreign('author_id')->references('id')->on('authors');

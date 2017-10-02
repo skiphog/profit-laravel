@@ -1,8 +1,9 @@
 <?php
 
 use App\User;
-use App\Article;
+use App\Rubric;
 use App\Author;
+use App\Article;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,9 +20,11 @@ class DatabaseSeeder extends Seeder
         User::truncate();
         Article::truncate();
         Author::truncate();
+        Rubric::truncate();
 
         factory(User::class, 1)->create();
         factory(Author::class, 10)->create();
+        factory(Rubric::class, 5)->create();
         factory(Article::class, 50)->create();
     }
 }
