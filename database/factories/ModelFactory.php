@@ -27,7 +27,7 @@ $factory->define(App\Rubric::class, function (Faker $faker) {
 });
 
 $factory->define(App\Article::class, function (Faker $faker) {
-    static $date = '2017-10-01 13:00:00';
+    static $date = '2017-10-02 00:00:00';
 
     return [
         'title'      => $faker->realText(100),
@@ -35,7 +35,7 @@ $factory->define(App\Article::class, function (Faker $faker) {
         'author_id'  => App\Author::all()->random()->id,
         'rubric_id'  => App\Rubric::all()->random()->id,
         'created_at' => $date = Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $date)
-            ->modify('-1 days')
+            ->modify('+2 hour')
             ->format('Y-m-d H:i:s'),
         'updated_at' => null
     ];
