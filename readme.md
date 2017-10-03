@@ -1,4 +1,4 @@
-## [Современные PHP-фреймворки](#) - Laravel
+## [Современные PHP-фреймворки](https://github.com/skiphog/profit-frameworks) - Laravel
 **ДЗ №1** 
 * [Изменение текста на главной странице](https://github.com/skiphog/profit-laravel/blob/master/resources/views/welcome.blade.php)
 
